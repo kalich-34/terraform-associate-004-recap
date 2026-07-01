@@ -12,4 +12,15 @@ jobs:
     - name: List Files
       run: ls
 
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v4
+      with:
+        cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+
+    - name: Terraform Init
+      run: terraform init
+
+    - name: Terraform Plan
+      run: terraform plan
+
     
