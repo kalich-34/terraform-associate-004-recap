@@ -3,5 +3,5 @@ output "vpc_cidr_block" {
 }
 
 output "subnet_cidr_block" {
-  value = module.subnet[*].cidr_block
+  value = module.subnet.cidr_block
 }
