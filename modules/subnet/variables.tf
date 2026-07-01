@@ -1,4 +1,4 @@
-variable "count" {
+variable "no_availability_zones" {
   type = number
 }
 
